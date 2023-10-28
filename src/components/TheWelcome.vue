@@ -1,5 +1,10 @@
 <script setup>
-
+import { ref } from 'vue';
+import Popup from '../components/Popup.vue'
+const showPopup = ref(false)
+const showCrun = ()=>{
+  showPopup.value = !showPopup.value
+}
 </script>
 
 <template>
@@ -25,15 +30,15 @@
           </div>
           <div class="chapter">
             <div class="row">
-                <div class="col-5">
-                  <h1>Thành Vinh</h1>
-                </div>
-                <div class="col-2">
-                  <h1>&</h1>
-                </div>
-                <div class="col-5">
-                  <h1>Như Quỳnh</h1>
-                </div>
+              <div class="col-5">
+                <h1>Thành Vinh</h1>
+              </div>
+              <div class="col-2">
+                <h1>&</h1>
+              </div>
+              <div class="col-5">
+                <h1>Như Quỳnh</h1>
+              </div>
             </div>
           </div>
           <div class="time">
@@ -54,46 +59,73 @@
         </div>
       </div>
     </div>
+    <div class="contact">
+      <button @click="showCrun" v-if="!showPopup">Gửi mừng cưới</button>
+      <button @click="showCrun" v-if="showPopup">Đóng</button>
+    </div>
+    <Popup v-if="showPopup" />
   </div>
 </template>
 <style scoped>
-.time_at{
+.contact{
+  position: fixed;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+}
+.contact button{
+  border: none;
+  background-color: #ff003d;
+  color: white;
+  padding: 7px 30px;
+  border-radius: 6px;
+}
+.time_at {
   padding-top: 10px;
 }
-.addesss_at{
+
+.addesss_at {
   padding: 10px 0;
 }
-p{
+
+p {
   margin: 0;
   padding: 0;
 }
-.time{
+
+.time {
   margin-top: 20px;
 }
-.thank p{
+
+.thank p {
   font-size: 0.7em;
   font-style: italic;
 }
-.time p{
+
+.time p {
   font-style: italic;
   font-size: 0.9em;
 }
-.title_pri{
-  font-family:'Times New Roman', Times, serif;
+
+.title_pri {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1em;
   font-style: italic;
 }
-h1{
+
+h1 {
   font-family: 'iCiel Monterey Script';
   font-size: 3.5em;
   font-weight: 400;
 }
-.title_h4{
+
+.title_h4 {
   margin-top: 20px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 2em;
   font-style: italic;
 }
+
 .banner {
   width: 100%;
   opacity: 0.4;
@@ -119,18 +151,31 @@ h1{
   /* box-shadow: 2px 5px 6px 0px rgba(128, 128, 128, 0.356); */
   padding: 10px;
   position: absolute;
-  top: 7%;
+  top: 10%;
 }
-
 .background_content {
   border: 1px solid rgba(98, 98, 109, 0.048);
   max-width: 1000px;
-  height: 90vh;
+  min-height: 200px;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.432);
   border-radius: 10px;
   text-align: center;
+  padding-bottom: 30px;
 }
+/* 
+@media only screen and (max-width: 600px) {
+  .background_content {
+    border: 1px solid rgba(98, 98, 109, 0.048);
+    max-width: 1000px;
+    height: 90vh;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.432);
+    border-radius: 10px;
+    text-align: center;
+  }
+} */
+
 
 .background_content img {
   object-fit: cover;
