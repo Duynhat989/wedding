@@ -89,6 +89,18 @@
     justify-content: center;
     display: flex;
 }
+.loadding_title_1{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: flex;
+}
+.title_invite{
+    padding: 30px 15px;
+    font-family: 'iCiel Monterey Script';
+    font-size: 5em;
+    font-weight: 900;
+}
 .img-loadding{
     object-fit: cover;
     width: 100%;
@@ -102,6 +114,11 @@
         <div class="loadding_title">
             <div class="view-title">
                 <span class="title">Thành Vinh</span><i class='bx bx-heart'></i><span class="title">Như Quỳnh</span>
+            </div>
+        </div>
+        <div class="loadding_title_1">
+            <div class="view-title">
+                <span class="title_invite">Thư mời</span>
             </div>
         </div>
         <div class="loadding_content">
