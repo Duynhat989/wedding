@@ -53,8 +53,10 @@ h1{
   font-weight: 400;
 }
 .title_h4{
-  font-family: 'iCiel Monterey Script';
-  font-size: 4em;
+  margin-top: 20px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2em;
+  font-style: italic;
 }
 .banner {
   width: 100%;
