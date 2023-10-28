@@ -36,12 +36,48 @@
                 </div>
             </div>
           </div>
+          <div class="time">
+            <p>Trân trọng kính mời</p>
+            <p>tới tham dự lễ thành hôn của gia đình</p>
+            <p class="time_at">Vào lúc:</p>
+            <h6>11 giờ 00 phút - Thứ Sáu</h6>
+            <p>(Ngày 20 tháng 9 năm Quý Mão)</p>
+          </div>
+          <div class="address">
+            <p class="addesss_at">TƯ GIA NHÀ TRAI:</p>
+            <h6>Thôn Thịnh Lương - Xã Thanh Khê</h6>
+            <h6>H.Thanh Chương - Nghệ An</h6>
+          </div>
+          <div class="thank">
+            <p>Sự hiện diện của Quý vị là niềm hạnh phúc của gia đình chúng tôi!</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 <style scoped>
+.time_at{
+  padding-top: 10px;
+}
+.addesss_at{
+  padding: 10px 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.time{
+  margin-top: 20px;
+}
+.thank p{
+  font-size: 0.7em;
+  font-style: italic;
+}
+.time p{
+  font-style: italic;
+  font-size: 0.9em;
+}
 .title_pri{
   font-family:'Times New Roman', Times, serif;
   font-size: 1em;
@@ -78,7 +114,7 @@ h1{
 }
 
 .background {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   /* box-shadow: 2px 5px 6px 0px rgba(128, 128, 128, 0.356); */
   padding: 10px;
@@ -89,7 +125,7 @@ h1{
 .background_content {
   border: 1px solid rgba(98, 98, 109, 0.048);
   max-width: 1000px;
-  height: 80vh;
+  height: 90vh;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.432);
   border-radius: 10px;
