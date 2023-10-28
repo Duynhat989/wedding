@@ -54,8 +54,8 @@ h5{
                 <h6>Ngân hàng: {{ bank }}</h6>
             </div>
             <div class="title">
-                <p>Vui lòng ghi nội dung là người gửi</p>
-                <p>để chúng tôi có thể gửi lời cảm ơn đến bạn!</p>
+                <p>Vui lòng ghi nội dung là người</p>
+                <p>gửi để chúng tôi có thể gửi lời cảm ơn!</p>
             </div>
         </div>
     </div>
